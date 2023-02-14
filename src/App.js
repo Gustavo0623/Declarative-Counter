@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import Counter from './Counter'
+import Todo from './ToDo'
 import './App.css';
 
-
 function App() {
-  let [counter, changeCounter] = useState(1)
-  window.changeCounter = changeCounter
   return (
-    <h1>{counter}</h1>
-  )
+    <div className="App">
+      <Counter />
+      <Todo />
+    </div>
+  );
 }
 
 export default App;
